@@ -1,0 +1,78 @@
+/*{}*/
+
+@import "abstracts/variables";
+
+@import "base/reset";
+@import "base/globals";
+@import "base/utility";
+
+@import "layout/community";
+@import "layout/subscription";
+@import "layout/info";
+
+@media (min-width: 900px) {
+  .card {
+    max-width: 640px;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    height: 100%;
+  }
+
+  .community {
+    grid-column: span 2;
+  }
+
+  .community__title {
+    padding: 0 3rem 0 1.5rem;
+  }
+
+  .community__subtitle {
+    margin: 1rem 0;
+    padding: 0 3rem 0 1.5rem;
+  }
+
+  .community__text {
+    padding: 0 3rem 0 1.5rem;
+  }
+
+  .subscription {
+    border-bottom-left-radius: 5px;
+
+    &__title {
+      font-size: 1.2rem;
+      padding-left: 1.5rem;
+    }
+
+    &__pricing {
+      padding-left: 1.5rem;
+    }
+
+    &__text {
+      font-size: 0.95rem;
+      padding-left: 1.5rem;
+    }
+  }
+
+  .btn {
+    margin-left: 1.5rem;
+  }
+
+  .info {
+    border-bottom-left-radius: 0;
+
+    &__title,
+    &__list--item {
+      padding-left: 1.5rem;
+    }
+  }
+
+  /*.info__title {
+    padding-left: 1.5rem;
+  }
+
+  .info__list--item {
+    padding-left: 1.5rem;
+  }*/
+}

@@ -1,0 +1,36 @@
+.subscription {
+  padding: 2em 1.5em;
+  background-color: $cyan;
+
+  &__title {
+    color: #fff;
+  }
+
+  &__pricing {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem;
+  }
+
+  span {
+    opacity: 0.6;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  &__text {
+    font-size: 1.05rem;
+    color: #fff;
+    margin-bottom: 3rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.75rem 4.75rem;
+    background-color: $bright-yellow;
+    border-radius: 5px;
+    color: #fff;
+  }
+}
